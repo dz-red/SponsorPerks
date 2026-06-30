@@ -1,0 +1,30 @@
+name: SponsorPerks
+version: '1.1'
+main: fun.wardensmp.sponsorperks.SponsorPerks
+api-version: '1.21'
+author: Daniil
+description: Косметика для группы sponsor — GUI свечения и питомцев.
+softdepend: [TAB, LuckPerms]
+commands:
+  spons:
+    description: GUI спонсорских фишек (свечение + питомцы)
+    usage: /spons
+    permission: sponsor.menu
+  glow:
+    description: Свечение модели выбранным цветом (спонсор)
+    usage: /glow <&цвет|stop>
+    permission: sponsor.glow
+  pet:
+    description: Питомец-компаньон, бегает следом (спонсор)
+    usage: /pet <bee|fox|bat|zombie|stop>
+    permission: sponsor.pet
+permissions:
+  sponsor.menu:
+    description: Доступ к /spons GUI
+    default: false
+  sponsor.glow:
+    description: Доступ к /glow
+    default: false
+  sponsor.pet:
+    description: Доступ к /pet
+    default: false
