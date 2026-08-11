@@ -4,3 +4,6 @@ target/
 *.iml
 .vscode/
 *.jar
+*.bak*
+*.bak-*
+src.bak_*/
